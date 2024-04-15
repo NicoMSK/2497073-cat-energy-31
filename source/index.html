@@ -3,15 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
-  <p>Привет, мир!</p>
+  <header class="header header-desktop">
+    <div class="container">
+      <nav class="header__nav nav">
+        <a class="nav__logo" href="#">
+          <img src="#" width="33" height="38" alt="Логотип Кэт энерджи">
+          <img src="#" width="101" height="18" alt="Кэт энерджи">
+        </a>
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--current">
+            <a class="nav__link" href="#">главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
 </body>
 
 </html>
