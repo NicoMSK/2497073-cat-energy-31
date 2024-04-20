@@ -1,0 +1,24 @@
+.nav {}
+
+.nav__logo {}
+
+.nav__toggle {}
+
+.nav__list {}
+
+.nav__item {}
+
+.nav__item--current {}
+
+.nav__link {
+  @include basic-link;
+
+  @media(min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    color: $basic-white;
+  }
+}
