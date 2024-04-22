@@ -1,0 +1,15 @@
+.button-link {
+  min-width: 244px;
+  min-height: 40px;
+  display: inline-grid;
+  place-items: center;
+  text-align: center;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
