@@ -1,0 +1,28 @@
+.address {}
+
+.address__wrapper {}
+
+.address__slogan {
+  margin: 0;
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.address__text {
+  line-height: 20px;
+  color: $text-dark;
+  font-style: normal;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.address__map {}
