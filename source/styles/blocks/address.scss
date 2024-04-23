@@ -1,3 +1,5 @@
+$address-slogan: #111111;
+
 .address {}
 
 .address__wrapper {}
@@ -7,6 +9,7 @@
   font-family: $second-font;
   font-size: 16px;
   line-height: 20px;
+  color: $address-slogan;
   text-transform: uppercase;
 
   @media (min-width: 768px) {

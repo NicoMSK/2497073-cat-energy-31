@@ -5,11 +5,18 @@
   place-items: center;
   text-align: center;
 
+  padding: 10px 63px;
+  font-family: $second-font;
+  font-size: 16px;
+  background-color: $button-basic;
+  text-transform: uppercase;
+  text-decoration: none;
+
   &:hover {
     background-color: $button-status;
   }
 
   &:active {
-    color: lighten($main-light, 30%);
+    color: rgb(255, 255, 255, 0.3);
   }
 }

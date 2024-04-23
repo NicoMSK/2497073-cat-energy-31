@@ -37,8 +37,5 @@
 .hero__link {
   @include link-basic;
 
-  padding: 10px 63px;
-  font-size: 16px;
   color: $main-light;
-  background-color: $button-basic
 }
