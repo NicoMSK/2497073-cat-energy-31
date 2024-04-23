@@ -10,10 +10,10 @@
 
 @mixin link-basic {
   display: block;
-  color: $basic-black;
   font-family: $second-font;
   font-size: 20px;
   line-height: 20px;
+  color: $main-dark;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -24,13 +24,5 @@
   font-family: $second-font;
   font-size: 36px;
   line-height: 36px;
-  color: $basic-black;
-}
-
-@mixin link-button {
-  min-width: 244px;
-  min-height: 40px;
-  display: inline-grid;
-  place-items: center;
-  text-align: center;
+  color: $main-dark;
 }

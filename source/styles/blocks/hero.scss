@@ -4,13 +4,13 @@
   @include title-basic;
 
   text-align: center;
-  color: $basic-white;
+  color: $main-light;
 
   @media(min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
     text-align: start;
-    color: $basic-black;
+    color: $main-dark;
   }
 }
 
@@ -21,14 +21,14 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  color: $basic-white;
+  color: $main-light;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
     text-align: start;
     text-transform: uppercase;
-    color: $basic-black;
+    color: $main-dark;
   }
 }
 
@@ -39,6 +39,6 @@
 
   padding: 10px 63px;
   font-size: 16px;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: $main-light;
+  background-color: $button-basic
 }

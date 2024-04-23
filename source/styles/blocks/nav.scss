@@ -4,7 +4,9 @@
 
 .nav__toggle {}
 
-.nav__list {}
+.nav__list {
+  list-style: none;
+}
 
 .nav__item {}
 
@@ -27,7 +29,7 @@
   }
 
   @media (min-width: 1440px) {
-    color: $basic-white;
+    color: $main-light;
   }
 
   &:hover {
