@@ -56,6 +56,14 @@
   color: $main-light;
   background-color: $button-basic;
 
+  &:hover {
+    background-color: $button-status;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
+
   @media (min-width: 768px) {
     padding: 15px 70px;
   }
