@@ -15,7 +15,7 @@
 .nav__link {
   @include link-basic;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 18px;
     line-height: 24px;
 
