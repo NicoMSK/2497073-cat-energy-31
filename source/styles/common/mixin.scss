@@ -26,3 +26,10 @@
   line-height: 36px;
   color: $main-dark;
 }
+
+@mixin button-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
