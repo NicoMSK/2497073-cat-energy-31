@@ -62,7 +62,7 @@ $border-input: #cdcdcd;
   }
 
   &:active {
-    color: rgb(255, 255, 255, 0.3);
+    color: rgb($main-light, 0.3);
   }
 
   @media (min-width: 768px) {
