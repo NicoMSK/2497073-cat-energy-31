@@ -1,3 +1,5 @@
+$border-input: #cdcdcd;
+
 .subscribe__title {
   @include title-basic;
 
@@ -29,13 +31,18 @@
 
 .subscribe__input {
   padding: 13px;
+  font-size: 20px;
+  border: 1px solid $border-input;
 
   &::placeholder {
-
     font-family: $second-font;
     font-size: 20px;
     text-transform: uppercase;
     color: $text-dark;
+  }
+
+  &:hover {
+    border: 1px solid $text-dark;
   }
 }
 
@@ -44,11 +51,9 @@
 
   padding: 15px 81px;
   font-family: $second-font;
-  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
   color: $main-light;
   background-color: $button-basic;
 
