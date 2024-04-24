@@ -1,22 +1,12 @@
 $product-title: #222222;
 
-.product {}
-
 .product__list {
   list-style: none;
 }
 
-.product__item {}
-
 .product__link {
   @include link-basic;
 }
-
-.product__image-wrapper {}
-
-.product__image {}
-
-.product__wrapper {}
 
 .product__title {
   @include title-basic;
@@ -31,10 +21,6 @@ $product-title: #222222;
     text-align: center;
   }
 }
-
-.product__features-list {}
-
-.product__features-item {}
 
 .product__features-text {
   font-size: 12px;
@@ -88,7 +74,7 @@ $product-title: #222222;
   }
 
   @media (min-width: 1440px) {
-    padding: 10px 39px
+    padding: 10px 39px;
   }
 }
 
@@ -108,5 +94,3 @@ $product-title: #222222;
     line-height: 18px;
   }
 }
-
-.product__button--all {}

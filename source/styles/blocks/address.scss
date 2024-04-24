@@ -1,9 +1,5 @@
 $address-slogan: #111111;
 
-.address {}
-
-.address__wrapper {}
-
 .address__slogan {
   margin: 0;
   font-family: $second-font;
@@ -27,5 +23,3 @@ $address-slogan: #111111;
     font-size: 16px;
   }
 }
-
-.address__map {}

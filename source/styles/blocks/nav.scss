@@ -1,16 +1,6 @@
-.nav {}
-
-.nav__logo {}
-
-.nav__toggle {}
-
 .nav__list {
   list-style: none;
 }
-
-.nav__item {}
-
-.nav__item--current {}
 
 .nav__link {
   @include link-basic;

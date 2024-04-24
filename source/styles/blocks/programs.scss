@@ -1,10 +1,6 @@
-.programs {}
-
 .programs__list {
   list-style: none;
 }
-
-.programs__item {}
 
 .programs__title {
   @include title-basic;

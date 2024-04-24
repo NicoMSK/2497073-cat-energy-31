@@ -1,12 +1,10 @@
-.hero {}
-
 .hero__title {
   @include title-basic;
 
   text-align: center;
   color: $main-light;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -31,8 +29,6 @@
     color: $main-dark;
   }
 }
-
-.hero__image {}
 
 .hero__link {
   @include link-basic;

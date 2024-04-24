@@ -1,5 +1,3 @@
-.subscribe {}
-
 .subscribe__title {
   @include title-basic;
 
@@ -28,8 +26,6 @@
     line-height: 32px;
   }
 }
-
-.subscribe__form {}
 
 .subscribe__input {
   padding: 13px;
