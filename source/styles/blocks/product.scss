@@ -1,7 +1,7 @@
 $product-title: #222222;
 
 .product__list {
-  list-style: none;
+  @include list-reset;
 }
 
 .product__link {

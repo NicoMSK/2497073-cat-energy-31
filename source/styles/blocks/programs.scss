@@ -1,5 +1,5 @@
 .programs__list {
-  list-style: none;
+  @include list-reset;
 }
 
 .programs__title {

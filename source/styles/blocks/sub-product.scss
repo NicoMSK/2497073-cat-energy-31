@@ -18,7 +18,7 @@ $subtitle-color: #222222;
 }
 
 .sub-product__list {
-  list-style: none;
+  @include list-reset;
 }
 
 .sub-product__subtitle {
