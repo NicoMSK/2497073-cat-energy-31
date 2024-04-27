@@ -9,7 +9,7 @@
 .nav__link {
   @include link-basic;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
 
@@ -22,7 +22,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     color: $main-light;
     background-color: $button-basic;
   }
