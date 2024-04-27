@@ -109,6 +109,7 @@
 
 .programs__link {
   @include link-basic;
+  position: relative;
 
   min-width: 134px;
   min-height: 24px;
@@ -118,6 +119,16 @@
   padding: 4px 57px 4px 0;
   font-size: 16px;
   line-height: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 10px;
+    right: 17px;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    background-color: $main-dark;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -129,6 +140,11 @@
     &:active {
       opacity: 0.3;
     }
+
+    &::after {
+      right: 0;
+    }
+
   }
 
   @media (min-width: $desktop-width) {
@@ -140,6 +156,10 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    &::after {
+      right: 3px;
     }
   }
 }
