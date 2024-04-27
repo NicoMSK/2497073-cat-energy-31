@@ -1,3 +1,7 @@
+.nav__toggle {
+  @include button-reset;
+}
+
 .nav__list {
   @include list-reset;
 }
