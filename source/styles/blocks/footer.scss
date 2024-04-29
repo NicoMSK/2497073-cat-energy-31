@@ -1,5 +1,21 @@
 $link-svg-color: #666666;
 
+.footer__logo-link {
+  @include link-basic;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__copyright-link {
   display: block;
   max-width: 280px;
