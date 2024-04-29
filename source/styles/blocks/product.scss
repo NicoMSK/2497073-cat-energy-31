@@ -58,6 +58,23 @@ $product-title: #222222;
   }
 }
 
+.product__wrapper--last {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#plus-icon");
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
 .product__button--all {
   padding: 10px 94px;
   color: $text-dark;
