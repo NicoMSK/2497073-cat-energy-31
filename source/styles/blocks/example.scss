@@ -66,8 +66,21 @@ $button-color: #666666;
 }
 
 .example__button {
-  height: 256px;
-  mask-image: url("../../icons/stack.svg#curtain-btn");
-  background-color: $button-color;
-  cursor: pointer;
+  @include button-reset;
+
+  color: $button-color;
+
+  &:hover {
+    color: $button-basic;
+  }
+
+  &:active {
+    color: lighten($button-status, 30%);
+  }
+}
+
+.example__button--svg {
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }
