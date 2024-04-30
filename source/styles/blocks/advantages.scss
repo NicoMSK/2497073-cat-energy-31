@@ -40,7 +40,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     &::after {
       content: counter(enumerator);
       position: absolute;
