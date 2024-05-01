@@ -19,7 +19,7 @@ $social-color: #666666;
   }
 
   &:active {
-    background-color: lighten($button-basic, 30%);
+    background-color: rgba($button-basic, 0.3);
   }
 }
 
