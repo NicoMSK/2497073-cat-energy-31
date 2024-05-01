@@ -124,12 +124,12 @@
   &::after {
     content: "";
     position: absolute;
-    width: 32px;
-    height: 10px;
+    width: 24px;
+    height: 12px;
     right: 17px;
-    mask-image: url("../../icons/stack.svg#arrow-right");
-    background-color: $main-dark;
+    background-image: url("../../icons/stack.svg#arrow-right");
   }
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -162,4 +162,9 @@
       right: 3px;
     }
   }
+}
+
+.programs__link:hover::after {
+  width: 32px;
+  background-image: url("../../icons/stack.svg#arrow-right-32");
 }
