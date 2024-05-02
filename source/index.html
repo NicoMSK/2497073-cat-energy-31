@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="container header__container">
+    <div class="header__container container">
       <a class="header__logo-link" href="#">
         <picture>
           <source media="(min-width: 1440px)" width="70" height="60" type="image/svg+xml"
@@ -47,18 +47,20 @@
   </header>
   <main class="main">
     <section class="hero">
-      <div class="container">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" width="552" height="499" type="image/png"
-            srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="709" height="609" type="image/png"
-            srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
-          <img class="hero__image" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x"
-            width="280" height="270" alt="Кэт энерджи со вкусом курицы">
-        </picture>
-        <a class="hero__link button-link" href="#">подобрать программу</a>
+      <div class="hero__container container">
+        <div class="hero__box">
+          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <p class="hero__text">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/png"
+              srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/png"
+              srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
+            <img class="hero__image" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x"
+              width="280" height="270" alt="Кэт энерджи со вкусом курицы">
+          </picture>
+          <a class="hero__link button-link" href="#">подобрать программу</a>
+        </div>
       </div>
     </section>
     <section class="programs">
