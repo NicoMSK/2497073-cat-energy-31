@@ -1,5 +1,5 @@
 .hero {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     background-color: $button-basic;
   }
 
