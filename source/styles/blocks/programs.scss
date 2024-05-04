@@ -28,6 +28,7 @@
 
 .programs__item {
   position: relative;
+  min-height: 50px;
   background-color: $programs-bg;
 
   &::before {
@@ -73,6 +74,14 @@
       height: 106px;
       left: -17px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 100px;
   }
 }
 

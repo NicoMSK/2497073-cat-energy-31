@@ -65,6 +65,8 @@ $counter-color: #f2f2f2;
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 280px;
+
     &::after {
       content: counter(enumerator);
       position: absolute;
@@ -74,6 +76,7 @@ $counter-color: #f2f2f2;
       font-size: 280px;
       line-height: 280px;
       color: $counter-color;
+      z-index: -1;
     }
   }
 }
