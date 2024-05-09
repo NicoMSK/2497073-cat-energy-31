@@ -4,7 +4,6 @@
 
 .header__container {
   padding-top: 13px;
-  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -20,7 +19,10 @@
 }
 
 .header__logo-link {
-  @include link-basic;
+  margin-bottom: 15px;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
 
   &:hover {
     opacity: 0.8;
