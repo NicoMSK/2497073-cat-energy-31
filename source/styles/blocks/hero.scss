@@ -1,6 +1,9 @@
 .hero {
   @media (max-width: 767px) {
-    background-color: $button-basic;
+    background-image: linear-gradient(rgba($button-basic, 0.85), 63%, $main-light 37%),
+      image-set(url("../../images/index-background-mobile@1x.jpg") type("image/jpg") 1x);
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 
   &::before {
@@ -21,6 +24,7 @@
 
 .hero__container {
   margin-bottom: 20px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -42,6 +46,7 @@
 .hero__title {
   @include title-basic;
 
+  margin-bottom: 25px;
   text-align: center;
   color: $main-light;
 
@@ -55,6 +60,7 @@
 
 .hero__text {
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
   font-family: $second-font;
   line-height: 14px;
@@ -69,6 +75,11 @@
     text-transform: uppercase;
     color: $main-dark;
   }
+}
+
+.hero__image {
+  display: block;
+  margin-bottom: 3px;
 }
 
 .hero__link {

@@ -219,5 +219,7 @@
 }
 
 .nav__link--index {
-  color: $main-light;
+  @media (min-width: $desktop-width) {
+    color: $main-light;
+  }
 }
