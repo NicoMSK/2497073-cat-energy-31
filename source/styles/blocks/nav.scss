@@ -1,12 +1,55 @@
 .nav {
-  outline: 2px dashed red;
   position: relative;
   background-color: $main-light;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.nav__logo-link {
+  margin-bottom: 15px;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 202px;
+  }
+}
+
+.nav__logo-img {
+  display: block;
+}
+
+.nav__logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
   }
 }
 
@@ -65,12 +108,11 @@
 .nav .nav__wrapper {
   @media (min-width: $tablet-width) {
     position: static;
+    align-self: flex-end;
   }
 }
 
 .nav__list {
-  outline: 1px solid salmon;
-
   @include list-reset;
 
   display: flex;
@@ -81,6 +123,11 @@
     flex-wrap: wrap;
     gap: 15px 33px;
     width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    justify-content: flex-end;
   }
 }
 
@@ -115,6 +162,23 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+
+    &--active-index {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $main-light;
+      }
+    }
+  }
 }
 
 .nav__link {
@@ -140,8 +204,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $main-light;
-    background-color: $button-basic;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &:hover {
@@ -151,4 +216,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.nav__link--index {
+  color: $main-light;
 }

@@ -15,38 +15,3 @@
     padding-bottom: 29px;
   }
 }
-
-.header__logo-link {
-  margin-bottom: 15px;
-  width: 190px;
-  display: flex;
-  justify-content: space-between;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:focus-visible {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    width: 174px;
-  }
-}
-
-.header__logo-img {
-  display: block;
-}
-
-.header__logo-text {
-  @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
-  }
-}
