@@ -27,6 +27,7 @@
 }
 
 .programs__item {
+  padding: 21px 20px 18px;
   position: relative;
   min-height: 50px;
   background-color: $programs-bg;
@@ -56,9 +57,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -8px;
-    width: 68px;
+    top: 18px;
+    left: 12px;
+    width: 67px;
     height: 53px;
     background-repeat: no-repeat;
 
@@ -118,7 +119,8 @@
 
 .programs__title {
   @include title-basic;
-  margin-left: 70px;
+  outline: 1px solid aqua;
+  margin: 5px 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -130,9 +132,15 @@
 }
 
 .programs__description {
+  outline: 2px solid teal;
+
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
+  padding-bottom: 23px;
   color: $text-dark;
+
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
