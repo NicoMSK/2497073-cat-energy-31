@@ -27,8 +27,6 @@
 }
 
 .programs__item {
-  outline: 2px solid salmon;
-
   padding: 21px 20px 18px;
   position: relative;
   min-height: 50px;
@@ -53,7 +51,8 @@
     @media (min-width: $desktop-width) {
       width: 100px;
       height: 100px;
-      left: 0;
+      top: 47px;
+      left: 50px;
     }
   }
 
@@ -86,6 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 47px 61px 55px 52px;
     min-height: 100px;
   }
 }
@@ -102,6 +102,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: 40px;
+    left: 33px;
     background-size: 70px 97px;
   }
 }
@@ -118,6 +120,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    top: 42px;
+    left: 31px;
     background-size: 134px 56px;
     background-position: center;
   }
@@ -125,7 +129,7 @@
 
 .programs__title {
   @include title-basic;
-  outline: 1px solid aqua;
+
   margin: 5px 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
@@ -137,17 +141,18 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 36px 0 73px 162px;
+  }
 }
 
 .programs__description {
-  outline: 2px solid teal;
-
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
   padding-bottom: 23px;
   color: $text-dark;
-
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
@@ -157,6 +162,12 @@
     font-size: 16px;
     line-height: 24px;
     color: $main-dark;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    width: 100%;
   }
 }
 
