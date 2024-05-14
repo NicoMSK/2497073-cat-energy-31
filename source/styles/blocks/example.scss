@@ -3,6 +3,19 @@ $button-color: #666666;
 .example {
   border-top: 1px solid #e6e6e6;
   background-color: $example-bg;
+
+  @media (min-width:$tablet-width) {
+    background-image: linear-gradient($main-light 57%, $example-bg 43%);
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    background-image: linear-gradient($main-light 23%, $example-bg 15%);
+  }
+}
+
+.example__wrapper {
+  outline: 2px solid violet;
 }
 
 .example__container {
@@ -19,7 +32,7 @@ $button-color: #666666;
     padding-top: 0;
     padding-bottom: 75px;
     display: grid;
-    grid-template-columns: 436px 560px;
+    grid-template-columns: repeat(2, 1fr);
     gap: 224px;
   }
 }
@@ -35,6 +48,10 @@ $button-color: #666666;
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -43,10 +60,22 @@ $button-color: #666666;
   line-height: 18px;
   color: $text-dark;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -61,7 +90,8 @@ $button-color: #666666;
   }
 
   @media (min-width: $desktop-width) {
-    width: 366px;
+    margin: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -79,6 +109,9 @@ $button-color: #666666;
     width: 367px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__item {
@@ -123,11 +156,16 @@ $button-color: #666666;
     left: 8px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $main-light;
 
     &--width {
       width: 70%;
       left: 25px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $example-bg;
   }
 }
 
@@ -143,8 +181,18 @@ $button-color: #666666;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 174px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    display: block;
+  }
+}
+
+.example__price {
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
   }
 }
 
@@ -153,6 +201,12 @@ $button-color: #666666;
   position: relative;
   width: 100%;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .example__image-box img {
@@ -176,7 +230,7 @@ $button-color: #666666;
   @include button-reset;
   position: absolute;
   top: 0;
-  left: 40%;
+  left: 45%;
   z-index: 5;
   color: $button-color;
 
