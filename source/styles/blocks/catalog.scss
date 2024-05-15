@@ -1,6 +1,15 @@
+$border-color: #d9d9d9;
+
+.catalog {
+  @media (max-width: $mobile-width) {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
 .catalog__container {
+  outline: 2px solid hotpink;
   margin-top: 27px;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
@@ -15,6 +24,8 @@
 
 .catalog__title {
   @include title-basic;
+
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

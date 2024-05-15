@@ -18,6 +18,11 @@ $link-svg-color: #666666;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .footer__logo-link {

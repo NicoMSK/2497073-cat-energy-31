@@ -1,4 +1,5 @@
 $product-title: #222222;
+$border-color: #ebebeb;
 
 .product__list {
   @include list-reset;
@@ -16,11 +17,60 @@ $product-title: #222222;
   }
 }
 
-.product__link {
+.product__item {
+  padding: 20px 0 25px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: $border-color;
+      top: 0px;
+      left: 50%;
+    }
+  }
+}
+
+.product__image-wrapper {
+  // outline: 5px solid red;
+  width: 140px;
+  height: 107px;
+}
+
+.product__link-img {
+  // outline: 3px dashed navy;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+
+  // background-color: aquamarine;
+}
+
+.product__link-text {
+  // outline: 2px solid aqua;
   @include link-basic;
+  margin-bottom: 14px;
+  width: 80px;
+}
+
+.product__image {
+  display: block;
+}
+
+.product__wrapper {
+  // outline: 2px solid hotpink;
+  width: 140px;
 }
 
 .product__title {
+  // outline: 3px solid green;
   @include title-basic;
 
   font-size: 16px;
@@ -31,6 +81,15 @@ $product-title: #222222;
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.product__features-list {
+  // outline: 5px solid mediumaquamarine;
+}
+
+.product__features-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__features-text {
@@ -57,7 +116,9 @@ $product-title: #222222;
 }
 
 .product__button {
-  padding: 10px 109px;
+  margin-top: 17px;
+  padding: 10px;
+  width: 100%;
   color: $main-light;
 
   @media (min-width: $tablet-width) {
@@ -70,12 +131,25 @@ $product-title: #222222;
   }
 }
 
+.product__item--last {
+  padding: 25px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
 .product__wrapper--last {
+  margin-bottom: 21px;
   position: relative;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &::before {
     content: "";
     position: absolute;
+    top: 0;
     width: 30px;
     height: 30px;
     background-image: url("../../icons/stack.svg#plus-icon");
@@ -88,7 +162,8 @@ $product-title: #222222;
 }
 
 .product__button--all {
-  padding: 10px 94px;
+  margin: 0;
+  padding: 10px;
   color: $text-dark;
   background-color: $programs-bg;
 
@@ -106,7 +181,10 @@ $product-title: #222222;
   }
 }
 
-.product__title--color {
+.product__title--last {
+  margin-top: 53px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
   color: #111111;
 }
 
