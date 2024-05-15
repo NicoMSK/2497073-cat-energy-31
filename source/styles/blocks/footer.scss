@@ -12,7 +12,9 @@ $link-svg-color: #666666;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -34,16 +36,31 @@ $link-svg-color: #666666;
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0;
+  }
 }
 
 .footer__social {
   padding: 20px 74px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 185px;
+    justify-content: center;
+    border: none;
+  }
 }
 
 .footer__copyright {
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__copyright-link {
@@ -65,6 +82,10 @@ $link-svg-color: #666666;
 
   &:active {
     color: rgba($button-basic, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
   }
 }
 
