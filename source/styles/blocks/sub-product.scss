@@ -7,6 +7,10 @@ $subtitle-color: #222222;
 .sub-product__container {
   // outline: 2px dashed red;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .sub-product__wrapper {
@@ -51,6 +55,8 @@ $subtitle-color: #222222;
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    margin-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -65,18 +71,32 @@ $subtitle-color: #222222;
   // outline: 2px solid salmon;
   @include list-reset;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .sub-product__item {
+  // outline: 2px solid teal;
   padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .sub-product__subtitle {
+  // outline: 2px dotted violet;
   margin: 0;
   margin-bottom: 13px;
   font-family: $second-font;
@@ -87,15 +107,21 @@ $subtitle-color: #222222;
   color: $subtitle-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 .sub-product__box {
+  // outline: 3px dashed lawngreen;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+  }
 }
 
 .sub-product__text,
@@ -113,10 +139,6 @@ $subtitle-color: #222222;
   padding: 10px;
   width: 100%;
   color: $main-light;
-
-  @media (min-width: $tablet-width) {}
-
-  @media (min-width: $desktop-width) {}
 }
 
 .sub-product__promo-box {
@@ -141,6 +163,13 @@ $subtitle-color: #222222;
       height: 83px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 125px 60px 77px;
+    min-height: 200px;
+    justify-content: flex-start;
+    background-image: linear-gradient(rgba($button-basic, 0.85), rgba($button-basic, 0.85)), image-set(url("../../images/catalog-background-tablet@1x.jpg") 1x, url("../../images/catalog-background-tablet@2x.jpg") 2x);
+  }
 }
 
 .sub-product__promo-text {
@@ -150,4 +179,12 @@ $subtitle-color: #222222;
   font-size: 16px;
   line-height: 20px;
   color: $main-light;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-left: auto;
+    width: 161px;
+    text-align: left;
+    align-self: center;
+  }
 }
