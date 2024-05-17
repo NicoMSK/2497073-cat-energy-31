@@ -5,7 +5,6 @@ $border-input: #cdcdcd;
 }
 
 .subscribe__container {
-  outline: 3px solid red;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -78,6 +77,8 @@ $border-input: #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 72px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -88,10 +89,13 @@ $border-input: #cdcdcd;
     margin: 0 auto;
     width: 632px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
 }
 
 .subscribe__description {
-  // outline: 2px solid teal;
   margin: 0;
   margin-bottom: 24px;
   font-family: $second-font;
@@ -153,7 +157,6 @@ $border-input: #cdcdcd;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 15px 70px;
     flex-shrink: 2;
   }
 }
