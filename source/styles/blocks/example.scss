@@ -221,6 +221,10 @@ $button-color: #666666;
   height: 100%;
 }
 
+.example__img-after {
+  width: 100%;
+}
+
 .example__button {
   @include button-reset;
 
@@ -240,7 +244,20 @@ $button-color: #666666;
     top: 50%;
     width: 40px;
     height: 40px;
+    border: 2px solid $button-color;
     border-radius: 100%;
+    background-color: $main-light;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 18px;
+    border: 2px solid $button-color;
     background-color: $button-color;
     transform: translate(-50%, -50%);
     mask-image: url("../../icons/stack.svg#arrow-btn");
@@ -258,9 +275,18 @@ $button-color: #666666;
 }
 
 .example__button:hover::before {
-  background-color: $button-basic;
+  border: 2px solid $button-basic;
 }
 
 .example__button:active::before {
+  border: 2px solid $button-basic;
+}
+
+.example__button:hover::after {
+  border: 2px solid $button-basic;
+  background-color: $button-basic;
+}
+
+.example__button:active::after {
   background-color: rgba($button-status, 0.6);
 }
