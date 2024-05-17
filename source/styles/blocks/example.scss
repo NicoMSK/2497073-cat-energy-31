@@ -223,23 +223,44 @@ $button-color: #666666;
 
 .example__button {
   @include button-reset;
+
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 50%;
+  width: 4px;
+  height: 100%;
   z-index: 5;
-  color: $button-color;
+  border-radius: 20px;
+  background-color: $button-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: $button-color;
+    transform: translate(-50%, -50%);
+    mask-image: url("../../icons/stack.svg#arrow-btn");
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
 
   &:hover {
-    color: $button-basic;
+    background-color: $button-basic;
   }
 
   &:active {
-    color: rgba($button-status, 0.6);
+    background-color: rgba($button-status, 0.6);
   }
 }
 
-.example__button-svg {
-  @media (min-width: $tablet-width) {
-    height: 512px;
-  }
+.example__button:hover::before {
+  background-color: $button-basic;
+}
+
+.example__button:active::before {
+  background-color: rgba($button-status, 0.6);
 }

@@ -110,7 +110,9 @@ $border-input: #cdcdcd;
 }
 
 .subscribe__form {
-  display: flex;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .subscribe__input {
