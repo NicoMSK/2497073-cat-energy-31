@@ -71,6 +71,8 @@ $border-input: #cdcdcd;
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -78,6 +80,13 @@ $border-input: #cdcdcd;
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
+  }
+}
+
+.subscribe__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 632px;
   }
 }
 
@@ -96,6 +105,10 @@ $border-input: #cdcdcd;
   }
 }
 
+.subscribe__form {
+  display: flex;
+}
+
 .subscribe__input {
   margin-bottom: 16px;
   padding: 13px;
@@ -112,6 +125,10 @@ $border-input: #cdcdcd;
 
   &:hover {
     border: 1px solid $text-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -137,5 +154,6 @@ $border-input: #cdcdcd;
 
   @media (min-width: $tablet-width) {
     padding: 15px 70px;
+    flex-shrink: 2;
   }
 }
