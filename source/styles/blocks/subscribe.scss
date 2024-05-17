@@ -1,6 +1,11 @@
 $border-input: #cdcdcd;
 
+.subscribe {
+  overflow-x: hidden;
+}
+
 .subscribe__container {
+  outline: 3px solid red;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -18,8 +23,52 @@ $border-input: #cdcdcd;
 .subscribe__title {
   @include title-basic;
 
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 24px;
+  width: fit-content;
+  background-color: $main-light;
+  box-shadow: -40px 0 0 0 $main-light, 40px 0 0 0 $main-light;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: $button-basic;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 12px;
+    left: 50%;
+    z-index: -1;
+    background-color: $button-basic;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -33,10 +82,13 @@ $border-input: #cdcdcd;
 }
 
 .subscribe__description {
+  // outline: 2px solid teal;
   margin: 0;
+  margin-bottom: 24px;
   font-family: $second-font;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -45,7 +97,9 @@ $border-input: #cdcdcd;
 }
 
 .subscribe__input {
+  margin-bottom: 16px;
   padding: 13px;
+  width: 100%;
   font-size: 20px;
   border: 1px solid $border-input;
 
@@ -64,7 +118,8 @@ $border-input: #cdcdcd;
 .subscribe__button {
   @include button-reset;
 
-  padding: 15px 81px;
+  padding: 15px;
+  width: 100%;
   font-family: $second-font;
   font-size: 20px;
   line-height: 26px;
