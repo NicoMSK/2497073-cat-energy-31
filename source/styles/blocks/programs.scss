@@ -174,7 +174,6 @@
 .programs__link {
   @include link-basic;
   position: relative;
-
   max-width: 168px;
   min-height: 24px;
   display: inline-grid;
@@ -187,40 +186,31 @@
   &::after {
     content: "";
     position: absolute;
-    width: 32px;
+    width: 24px;
     height: 12px;
     right: 17px;
     background-image: url("../../icons/stack.svg#arrow-right");
-    transition: all 0.5s ease-in-out;
   }
 
+  &:hover {
+    opacity: 0.6;
+
+    &::after {
+      width: 32px;
+      right: 9px;
+      background-image: url("../../icons/stack.svg#arrow-right-32");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    &::after {
-      right: 8px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 4px 60px 4px 0;
-
-    &::after {
-      right: 3px;
-    }
   }
-}
-
-.programs__link:hover::after {
-  width: 32px;
-  background-image: url("../../icons/stack.svg#arrow-right-32");
 }
