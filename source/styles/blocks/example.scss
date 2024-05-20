@@ -5,12 +5,12 @@ $button-color: #666666;
   background-color: $example-bg;
 
   @media (min-width:$tablet-width) {
-    background-image: linear-gradient($main-light 57%, $example-bg 43%);
+    background-image: linear-gradient($main-light 620px, $example-bg 137px);
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    background-image: linear-gradient($main-light 23%, $example-bg 15%);
+    background-image: linear-gradient($main-light 137px, $example-bg 137px);
   }
 }
 
@@ -205,24 +205,26 @@ $button-color: #666666;
 }
 
 .example__image-box img {
-  width: 100%;
-  height: 100%;
+  max-width: fit-content;
   display: block;
-  object-fit: cover;
 }
 
 .example__img-before {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
-  z-index: 2;
   width: 50%;
-  height: 100%;
-}
+  overflow: hidden;
+  background-color: $example-bg;
+  z-index: 2;
 
-.example__img-after {
-  width: 100%;
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($main-light 160px, $example-bg 137px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient($main-light 137px, $example-bg 137px);
+  }
 }
 
 .example__button {
@@ -265,8 +267,13 @@ $button-color: #666666;
     mask-repeat: no-repeat;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: $button-basic;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $main-dark;
   }
 
   &:active {
@@ -274,17 +281,27 @@ $button-color: #666666;
   }
 }
 
-.example__button:hover::before {
+.example__button:hover::before,
+.example__button:focus-visible::before {
+  background-color: $main-light;
   border: 2px solid $button-basic;
+}
+
+.example__button:focus-visible::before {
+  outline: 1px solid $main-dark;
 }
 
 .example__button:active::before {
-  border: 2px solid $button-basic;
+  border: 2px solid rgba($button-status, 0.6);
 }
 
 .example__button:hover::after {
-  border: 2px solid $button-basic;
   background-color: $button-basic;
+}
+
+.example__button:focus-visible::after {
+  background-color: $button-basic;
+  outline: none;
 }
 
 .example__button:active::after {
