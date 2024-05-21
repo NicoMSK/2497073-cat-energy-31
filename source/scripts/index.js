@@ -14,6 +14,10 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+let addressMap = document.querySelector('.address__map');
+
+addressMap.classList.remove('address__map--nojs');
+
 const slider = document.querySelector('.example__image-box');
 const before = document.querySelector('.example__img-before');
 const beforeImage = before.querySelector('img');
@@ -93,6 +97,4 @@ body.addEventListener('touchmove', (e) => {
 });
 
 
-let addressMap = document.querySelector('.address__map');
 
-addressMap.classList.remove('address__map--nojs');
