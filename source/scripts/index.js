@@ -91,3 +91,8 @@ body.addEventListener('touchmove', (e) => {
   beforeAfterSlider(x);
   pauseEvents(e);
 });
+
+
+let addressMap = document.querySelector('.address__map');
+
+addressMap.classList.remove('address__map--nojs');
