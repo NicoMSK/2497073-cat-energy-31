@@ -1,4 +1,6 @@
 /* в этот файл добавляет скрипты*/
+
+//Переключение меню
 let navMain = document.querySelector('.nav');
 let navToggle = document.querySelector('.nav__toggle');
 
@@ -14,10 +16,12 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+// Переключение карты
 let addressMap = document.querySelector('.address__map');
 
 addressMap.classList.remove('address__map--nojs');
 
+// Слайдер
 const slider = document.querySelector('.example__image-box');
 const before = document.querySelector('.example__img-before');
 const beforeImage = before.querySelector('img');
@@ -95,6 +99,3 @@ body.addEventListener('touchmove', (e) => {
   beforeAfterSlider(x);
   pauseEvents(e);
 });
-
-
-
