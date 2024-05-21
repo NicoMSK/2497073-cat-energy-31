@@ -14,8 +14,7 @@ $link-svg-color: #666666;
   @media (min-width: $tablet-width) {
     padding-top: 55px;
     padding-bottom: 55px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
   }
 

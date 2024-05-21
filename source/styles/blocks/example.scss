@@ -4,7 +4,7 @@ $button-color: #666666;
   border-top: 1px solid #e6e6e6;
   background-color: $example-bg;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     background-image: linear-gradient($main-light 620px, $example-bg 137px);
   }
 

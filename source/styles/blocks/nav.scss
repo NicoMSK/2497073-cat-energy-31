@@ -127,8 +127,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 15px 33px;
     width: 436px;
   }
@@ -172,7 +171,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &--active-index {
       position: relative;
 
