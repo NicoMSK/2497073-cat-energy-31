@@ -383,12 +383,18 @@
         </iframe>
         <div class="address__img address__img--catalog">
           <picture>
+            <source media="(min-width: 1440px)" type="image/webp"
+              srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+
             <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
               srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/png"
               srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
             <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362"
-              alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              loading="lazy" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
         </div>
       </div>
@@ -398,8 +404,8 @@
     <div class="footer__container container">
       <div class="footer__logo-box">
         <a class="footer__logo-link" href="index.html">
-          <img class="footer__logo-text" width="128" height="25" src="images/content/logo-text-footer.svg"
-            alt="Логотип Кэт энерджи">
+          <img class="footer__logo-text" width="128" height="25" loading="lazy"
+            src="images/content/logo-text-footer.svg" alt="Логотип Кэт энерджи">
         </a>
       </div>
       <ul class="footer__social social">
