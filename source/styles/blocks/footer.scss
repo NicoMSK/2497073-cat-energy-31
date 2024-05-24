@@ -52,8 +52,10 @@ $link-svg-color: #666666;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-left: 160px;
+    margin-right: auto;
     padding: 0;
-    width: 185px;
+    width: 132px;
     justify-content: center;
     border: none;
   }
