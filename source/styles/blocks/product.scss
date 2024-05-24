@@ -179,6 +179,10 @@ $border-mobile: #ebebeb;
   width: 100%;
   color: $main-light;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 169px;
   }

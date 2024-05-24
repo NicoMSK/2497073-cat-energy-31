@@ -88,7 +88,7 @@ $subtitle-color: #222222;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     border: 1px solid #cdcdcd;
   }
 
@@ -132,7 +132,7 @@ $subtitle-color: #222222;
   color: $subtitle-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -148,7 +148,11 @@ $subtitle-color: #222222;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    gap: 49px;
+    gap: 52px;
+
+    &:nth-first-child(2) {
+      gap: 61px;
+    }
   }
 
   @media (min-width: $desktop-width) {
