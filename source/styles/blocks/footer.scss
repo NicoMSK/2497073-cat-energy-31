@@ -59,6 +59,10 @@ $link-svg-color: #666666;
     justify-content: center;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 416px;
+  }
 }
 
 .footer__copyright {

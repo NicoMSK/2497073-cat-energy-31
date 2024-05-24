@@ -285,6 +285,10 @@ $button-color: #666666;
   @media (min-width: $tablet-width) {
     top: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
+  }
 }
 
 .example__button:hover::before,
