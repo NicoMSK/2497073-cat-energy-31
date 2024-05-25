@@ -97,7 +97,7 @@ $address-slogan: #111111;
 }
 
 .address__img {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: calc(50% - 160px);
@@ -112,6 +112,7 @@ $address-slogan: #111111;
   }
 }
 
-.address__map--nojs .address__img--catalog {
+.address__map--nojs .address__img {
+  display: block;
   z-index: 1;
 }
