@@ -27,10 +27,10 @@ $counter-color: #f2f2f2;
 
 .advantages__list {
   @include list-reset;
-  counter-reset: enumerator 0;
 
   display: grid;
   gap: 20px;
+  counter-reset: enumerator 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 250px);

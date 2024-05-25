@@ -86,6 +86,7 @@ $subtitle-color: #222222;
 
 .sub-product__list {
   @include list-reset;
+
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -150,10 +151,6 @@ $subtitle-color: #222222;
 
   @media (min-width: $tablet-width) {
     gap: 52px;
-
-    &:nth-first-child(2) {
-      gap: 61px;
-    }
   }
 
   @media (min-width: $desktop-width) {
