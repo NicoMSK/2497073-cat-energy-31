@@ -108,21 +108,30 @@ $counter-color: #f2f2f2;
 }
 
 .advantages__item--water::before {
-  left: 2px;
   background-image: url("../../icons/stack.svg#water-icon");
   background-size: 27px 29px;
+
+  @media (min-width: $desktop-width) {
+    left: 2px;
+  }
 }
 
 .advantages__item--eat::before {
-  left: 3px;
   background-image: url("../../icons/stack.svg#eat-icon");
   background-size: 25px 30px;
+
+  @media (min-width: $desktop-width) {
+    left: 3px;
+  }
 }
 
 .advantages__item--clock::before {
-  left: 5px;
   background-image: url("../../icons/stack.svg#clock-icon");
   background-size: 27px 31px;
+
+  @media (min-width: $desktop-width) {
+    left: 5px;
+  }
 }
 
 .advantages__description {

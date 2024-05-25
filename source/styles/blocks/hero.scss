@@ -123,6 +123,7 @@
 .hero__link {
   @include link-basic;
 
+  margin-top: 2px;
   display: inline-grid;
   width: 100%;
   font-size: 16px;
