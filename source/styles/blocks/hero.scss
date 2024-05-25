@@ -3,6 +3,7 @@
     background-image: linear-gradient(rgba($button-basic, 0.85), 63%, $main-light 37%), image-set(url("../../images/index-background-mobile@1x.webp") type("image/webp") 1x, url("../../images/index-background-mobile@2x.webp") type("image/webp") 2x, url("../../images/index-background-mobile@1x.jpg")), linear-gradient(90deg, #525252 63%, #3a3a3a 1%);
     background-repeat: no-repeat;
     background-position: top center;
+    background-color: $button-basic;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +20,7 @@
       height: 694px;
       background-image: image-set(url("../../images/index-background-desktop1@1x.webp") type("image/webp") 1x, url("../../images/index-background-desktop1@2x.webp") type("image/webp") 2x, url("../../images/index-background-desktop1@1x.jpg") 1x, url("../../images/index-background-desktop1@2x.jpg") 2x), linear-gradient(#3a3a3a 99%, $text-dark 1%);
       background-repeat: no-repeat;
+      background-color: $button-basic;
       z-index: -1;
     }
   }
