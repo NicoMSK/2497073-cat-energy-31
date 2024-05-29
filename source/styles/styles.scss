@@ -20,7 +20,13 @@
 @import "./blocks/footer.scss";
 
 /* CATALOG-BLOCKS */
+@import "./blocks/form-btn.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/product.scss";
 @import "./blocks/sub-product.scss";
 @import "./blocks/subscribe.scss";
+
+/*PROGRAM*/
+@import "./blocks/data-list.scss";
+@import "./blocks/options-list.scss";
+@import "./blocks/program-selection.scss";

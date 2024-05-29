@@ -1,0 +1,20 @@
+.options-list {
+  @include list-reset;
+}
+
+.options-list__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.options-list__label {
+  padding-left: 45px;
+}
+
+.options-list__label-text {
+  font-family: $second-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $text-dark;
+}

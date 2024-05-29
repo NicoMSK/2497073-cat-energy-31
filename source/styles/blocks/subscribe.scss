@@ -147,28 +147,3 @@ $border-input: #cdcdcd;
     width: 496px;
   }
 }
-
-.subscribe__button {
-  @include button-reset;
-
-  padding: 15px;
-  width: 100%;
-  font-family: $second-font;
-  font-size: 20px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: $main-light;
-  background-color: $button-basic;
-
-  &:hover {
-    background-color: $button-status;
-  }
-
-  &:active {
-    color: rgb($main-light, 0.3);
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 256px;
-  }
-}
