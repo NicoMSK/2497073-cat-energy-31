@@ -7,7 +7,7 @@
 
 .data-list__item {
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 
   display: flex;
@@ -23,9 +23,49 @@
   white-space: nowrap;
 }
 
+.data-list__input-box {
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    z-index: 2;
+  }
+}
+
+.data-list__input-box--email {
+  &::before {
+    width: 18px;
+    height: 14px;
+    mask-image: url("../../icons/stack.svg#email");
+    background-color: $main-dark;
+  }
+
+  &:focus-within::before {
+    background-color: $button-basic;
+  }
+
+  &:invalid::before {
+    background-color: #ff8282;
+  }
+}
+
+.data-list__input-box--phone {
+  &::before {
+    width: 15px;
+    height: 15px;
+    mask-image: url("../../icons/stack.svg#phone");
+    background-color: $main-dark;
+  }
+}
+
 .data-list__input {
   padding: 13px 15px;
   width: 100%;
+  position: relative;
   font-family: $second-font;
   font-size: 16px;
   line-height: 18px;
@@ -50,4 +90,8 @@
     border: 1px solid transparent;
     outline: 2px solid #ff8282;
   }
+}
+
+.data-list__input[type="number"] {
+  appearance: none;
 }
