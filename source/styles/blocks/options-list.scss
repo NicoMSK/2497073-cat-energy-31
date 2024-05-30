@@ -4,12 +4,66 @@
 
 .options-list__item {
   &:not(:last-child) {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 }
 
 .options-list__label {
-  padding-left: 45px;
+  padding: 6px 0 6px 45px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus-within {
+    outline: 2px solid $main-dark;
+  }
+}
+
+.options-list__label:has(.options-list__input:disabled) {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.options-list__input {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 1px;
+  left: 0;
+  border: 1px solid #cdcdcd;
+  appearance: none;
+
+  &--radio {
+    border-radius: 100%;
+
+    &:checked::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      top: 7px;
+      left: 8px;
+      background-color: $button-basic;
+      border-radius: 100%;
+    }
+  }
+
+  &--mark:checked::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    top: 6px;
+    left: 5px;
+    mask-image: url("../../icons/stack.svg#check-mark");
+    background-color: $button-basic;
+  }
 }
 
 .options-list__label-text {

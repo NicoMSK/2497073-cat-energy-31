@@ -65,7 +65,7 @@
                 <input class="data-list__input" type="text" name="name" id="name" placeholder="барсик" required>
               </li>
               <li class="data-list__item">
-                <label class="data-list__label" for="weight">Вес (кг):* </label>
+                <label class="data-list__label" for="weight">Вес (кг):*</label>
                 <input class="data-list__input" type="number" name="weight" id="weight" placeholder="7" required>
               </li>
               <li class="data-list__item">
@@ -76,7 +76,7 @@
             <ul class="program-selection__list program-selection__list--line options-list">
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="radio" name="program-options"
+                  <input class="options-list__input options-list__input--radio" type="radio" name="program-options"
                     value="weight-loss" checked>
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">похудение</span>
@@ -84,7 +84,7 @@
               </li>
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="radio" name="program-options"
+                  <input class="options-list__input options-list__input--radio" type="radio" name="program-options"
                     value="weight-gain">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">набор массы</span>
@@ -92,7 +92,7 @@
               </li>
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="radio" name="program-options"
+                  <input class="options-list__input options-list__input--radio" type="radio" name="program-options"
                     value="i-don't-know">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">не знаю (Нужен ваш совет)</span>
@@ -103,14 +103,20 @@
           <fieldset class="program-selection__group">
             <legend class="program-selection__caption program-selection__caption--width">Контактные данные (владельца
               кота)</legend>
-            <ul class="program-selection__list program-selection__list--margin data-list">
+            <ul class="program-selection__list data-list">
               <li class="data-list__item">
-                <label class="data-list__label">E-mail:*</label>
-                <input class="data-list__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <label class="data-list__label" for="email">E-mail:*</label>
+                <div class="data-list__input-box data-list__input-box--email">
+                  <input class="data-list__input data-list__input--email" type="email" name="email" id="email"
+                    placeholder="kuklachev@gmail.com" required>
+                </div>
               </li>
               <li class="data-list__item">
-                <label class="data-list__label">Телефон:*</label>
-                <input class="data-list__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                <label class="data-list__label" for="phone">Телефон:*</label>
+                <div class="data-list__input-box data-list__input-box--phone">
+                  <input class="data-list__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90"
+                    required>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -125,28 +131,28 @@
             <ul class="program-selection__list options-list">
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="checkbox" name="sweetener" checked>
+                  <input class="options-list__input options-list__input--mark" type="checkbox" name="sweetener" checked>
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">сахарозаменитель</span>
                 </label>
               </li>
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="checkbox" name="drinking water">
+                  <input class="options-list__input options-list__input--mark" type="checkbox" name="drinking water">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">питьевая вода</span>
                 </label>
               </li>
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="checkbox" name="milk">
+                  <input class="options-list__input options-list__input--mark" type="checkbox" name="milk">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">молоко</span>
                 </label>
               </li>
               <li class="options-list__item">
                 <label class="options-list__label">
-                  <input class="options-list__input visually-hidden" type="checkbox" name="vitamins">
+                  <input class="options-list__input options-list__input--mark" type="checkbox" name="vitamins">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">витамины</span>
                 </label>
