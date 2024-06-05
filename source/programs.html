@@ -54,11 +54,12 @@
     <section class="program-selection">
       <div class="program-selection__container container">
         <h1 class="program-selection__title">Подбор программы</h1>
+        <h2 class="program-selection__subtitle">Заполните анкету, и&nbsp;мы&nbsp;подберем
+          программу питания для вашего кота
+        </h2>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="program-selection__group">
-            <legend class="program-selection__subtitle">Заполните анкету, и&nbsp;мы&nbsp;подберем
-              программу питания для вашего кота
-            </legend>
+            <legend class="visually-hidden">Данные вашего кота</legend>
             <ul class="program-selection__list program-selection__list--margin data-list">
               <li class="data-list__item">
                 <label class="data-list__label" for="name">Имя:*</label>
@@ -103,15 +104,15 @@
           <fieldset class="program-selection__group">
             <legend class="program-selection__caption program-selection__caption--width">Контактные данные (владельца
               кота)</legend>
-            <ul class="program-selection__list data-list">
-              <li class="data-list__item">
+            <ul class="program-selection__list data-list data-list--desktop">
+              <li class="data-list__item data-list__item--desktop">
                 <label class="data-list__label" for="email">E-mail:*</label>
                 <div class="data-list__input-box data-list__input-box--email">
                   <input class="data-list__input data-list__input--email" type="email" name="email" id="email"
                     placeholder="kuklachev@gmail.com" required>
                 </div>
               </li>
-              <li class="data-list__item">
+              <li class="data-list__item data-list__item--desktop">
                 <label class="data-list__label" for="phone">Телефон:*</label>
                 <div class="data-list__input-box data-list__input-box--phone">
                   <input class="data-list__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90"
@@ -128,29 +129,29 @@
           </fieldset>
           <fieldset class="program-selection__group">
             <legend class="program-selection__caption">Дополнительно</legend>
-            <ul class="program-selection__list options-list">
-              <li class="options-list__item">
+            <ul class="program-selection__list program-selection__list--grid options-list">
+              <li class="options-list__item options-list__item--grid">
                 <label class="options-list__label">
                   <input class="options-list__input options-list__input--mark" type="checkbox" name="sweetener" checked>
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="options-list__item">
+              <li class="options-list__item options-list__item--grid">
                 <label class="options-list__label">
                   <input class="options-list__input options-list__input--mark" type="checkbox" name="drinking water">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">питьевая вода</span>
                 </label>
               </li>
-              <li class="options-list__item">
+              <li class="options-list__item options-list__item--grid">
                 <label class="options-list__label">
                   <input class="options-list__input options-list__input--mark" type="checkbox" name="milk">
                   <span class="options-list__mark"></span>
                   <span class="options-list__label-text">молоко</span>
                 </label>
               </li>
-              <li class="options-list__item">
+              <li class="options-list__item options-list__item--grid">
                 <label class="options-list__label">
                   <input class="options-list__input options-list__input--mark" type="checkbox" name="vitamins">
                   <span class="options-list__mark"></span>
@@ -159,8 +160,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="program-selection__btn form-btn" type="submit">отправить заявку</button>
-          <p class="program-selection__text">* — Обязательные поля</p>
+          <div class="program-selection__box-btn">
+            <button class="program-selection__btn form-btn" type="submit">отправить заявку</button>
+            <p class="program-selection__text">* — Обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>

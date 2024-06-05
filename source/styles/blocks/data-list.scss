@@ -1,8 +1,14 @@
 .data-list {
   @include list-reset;
 
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+  }
 }
 
 .data-list__item {
@@ -13,6 +19,20 @@
   display: flex;
   gap: 13px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--desktop {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .data-list__label {
@@ -21,6 +41,11 @@
   text-transform: uppercase;
   color: $text-dark;
   white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .data-list__input-box {
@@ -33,6 +58,12 @@
     top: 16px;
     right: 14px;
     z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 20px;
+    }
   }
 }
 
@@ -47,10 +78,6 @@
   &:focus-within::before {
     background-color: $button-basic;
   }
-
-  &:invalid::before {
-    background-color: #ff8282;
-  }
 }
 
 .data-list__input-box--phone {
@@ -60,10 +87,14 @@
     mask-image: url("../../icons/stack.svg#phone");
     background-color: $main-dark;
   }
+
+  &:focus-within::before {
+    background-color: $button-basic;
+  }
 }
 
 .data-list__input {
-  padding: 13px 15px;
+  padding: 13px 40px 13px 15px;
   width: 100%;
   position: relative;
   font-family: $second-font;
@@ -90,8 +121,24 @@
     border: 1px solid transparent;
     outline: 2px solid #ff8282;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 40px 10px 20px;
+  }
+}
+
+.data-list__input::-webkit-outer-spin-button,
+.data-list__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .data-list__input[type="number"] {
-  appearance: none;
+  -moz-appearance: textfield;
 }

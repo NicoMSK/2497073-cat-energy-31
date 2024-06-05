@@ -6,6 +6,16 @@
   &:not(:last-child) {
     margin-bottom: 11px;
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+
+    &--grid {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .options-list__label {
@@ -20,6 +30,10 @@
 
   &:focus-within {
     outline: 2px solid $main-dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 5px 60px;
   }
 }
 
@@ -38,6 +52,7 @@
   left: 0;
   border: 1px solid #cdcdcd;
   appearance: none;
+  outline: none;
 
   &--radio {
     border-radius: 100%;
@@ -64,6 +79,26 @@
     mask-image: url("../../icons/stack.svg#check-mark");
     background-color: $button-basic;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 0;
+
+    &--radio:checked::before {
+      width: 18px;
+      height: 18px;
+      top: 10px;
+      left: 11px;
+    }
+
+    &--mark:checked::after {
+      width: 24px;
+      height: 19px;
+      top: 11px;
+      left: 8px;
+    }
+  }
 }
 
 .options-list__label-text {
@@ -71,4 +106,9 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $text-dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
